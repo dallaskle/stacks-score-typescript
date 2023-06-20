@@ -1,0 +1,92 @@
+
+.purple-top{
+  height: 15vh;
+  background-image: linear-gradient(180deg, #5546ff, #fff);
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Adjust the height as needed */
+    background-image: linear-gradient(#fff, #ecedf2);
+    border-bottom-left-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+    
+  }
+.main-title {
+  font-size: 48pt;
+  font-weight: 400;
+}
+.version {
+  background-color: #5546ff;
+  font-size: 10pt;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 4px;
+  border-radius: .3rem;
+}
+.main-subtitle {
+  font-size: 24pt;
+  font-weight: 300;
+}
+.input-box {
+    min-width: 60%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 0.75rem;
+    margin: .5rem .75rem;
+    margin-top: 0rem;
+    border-color: #7a40ee;
+}
+.input-submit-button {
+  color: #fff;
+  background-color: #7a40ee;
+  background-image: linear-gradient(135deg, #5546ff, rgba(122, 64, 238, 0));
+  border-radius: 0.75rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  width: 150px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: background-color .2s ease-in-out;
+  border: none;
+  outline: none;
+}
+.stacks-score-box {
+  padding: 40px;
+  font-size: 24pt;
+  background-image: linear-gradient(0deg, #dedfe7, #ecedf2);
+  margin: .5rem .75rem;
+  margin-bottom: 2rem;
+  border-radius: 4rem;
+  font-weight: 300;
+  border-bottom: 2px solid #7a40ee;
+  max-width: 60vw;
+}
+.stacks-score-total {
+  font-size: 54pt;
+  font-weight: 600;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 15px;
+  height: 15px;
+  border: 2.5px solid #f3f3f3; /* Light grey */
+  border-top: 2.5px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}

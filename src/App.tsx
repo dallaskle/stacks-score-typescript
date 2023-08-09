@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Main from './components/Main/Main'
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import LatestSearches from './components/Searches/LatestSearches';
+import { getLatestTransactions } from './services/Testing/AllTransactions';
 
 function App() {
+  
+  useEffect(() => {
+    getLatestTransactions();
+  },[])
+
   return (
     <div className="App">
       <Main />

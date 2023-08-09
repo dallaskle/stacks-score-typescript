@@ -1,4 +1,5 @@
 import axios, { AxiosError, AxiosResponse } from 'axios';
+import { postScore } from './Scores';
 
 interface Transaction {
   sender_address: string;
@@ -150,6 +151,7 @@ export async function getScore(principal: string) {
       principal: principal,
       totalScore: totalScore,
     };
+    postScore(principal, newScore.totalScore);
     return newScore;
   } catch(error) {
     console.error('Error:', error);

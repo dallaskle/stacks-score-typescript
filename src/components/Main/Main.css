@@ -4,16 +4,16 @@
   background-image: linear-gradient(180deg, #5546ff, #fff);
 }
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 60vh; /* Adjust the height as needed */
-    background-image: linear-gradient(#fff, #ecedf2);
-    border-bottom-left-radius: 8rem;
-    border-bottom-right-radius: 8rem;
-    
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh; /* Adjust the height as needed */
+  background-image: linear-gradient(#fff, #ecedf2);
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+  
+}
 .main-title {
   font-size: 48pt;
   font-weight: 400;
@@ -57,13 +57,17 @@
   transition: background-color .2s ease-in-out;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+.input-submit-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .stacks-score-box {
   padding: 40px;
   font-size: 24pt;
   background-image: linear-gradient(0deg, #dedfe7, #ecedf2);
   margin: .5rem .75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   border-radius: 4rem;
   font-weight: 300;
   border-bottom: 2px solid #7a40ee;
@@ -72,6 +76,24 @@
 .stacks-score-total {
   font-size: 54pt;
   font-weight: 600;
+}
+
+.stacks-score-detail-button {
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+  padding: 20px;
+  padding-top: 4px;
+  cursor: pointer;
+  color: gray;
+  font-weight: 300;
+}
+.stacks-score-detail-button:hover {
+  color: black;
+}
+.stacks-score-detail-item-div {
+  font-weight: 300;
 }
 
 @keyframes spinner {
